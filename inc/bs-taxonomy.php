@@ -2,22 +2,22 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-register_taxonomy( 'birre-cat', [ 'le-nostre-birre' ], [
+register_taxonomy( 'bevande-cat', [ 'altre-bevande' ], [
 	'label'             => '',
 	// определяется параметром $labels->name
 	'labels'            => [
-		'name'              => 'Birre category',
-		'singular_name'     => 'Birre category',
-		'search_items'      => 'Search Birre category',
-		'all_items'         => 'All Birre category',
-		'view_item '        => 'View Birre category',
-		'parent_item'       => 'Parent Birre category',
-		'parent_item_colon' => 'Parent Birre category:',
-		'edit_item'         => 'Edit Birre category',
-		'update_item'       => 'Update Birre category',
-		'add_new_item'      => 'Add New Birre category',
-		'new_item_name'     => 'New Birre category Name',
-		'menu_name'         => 'Birre category',
+		'name'              => 'Bevande category',
+		'singular_name'     => 'Bevande category',
+		'search_items'      => 'Search Bevande category',
+		'all_items'         => 'All Bevande category',
+		'view_item '        => 'View Bevande category',
+		'parent_item'       => 'Parent Bevande category',
+		'parent_item_colon' => 'Parent Bevande category:',
+		'edit_item'         => 'Edit Bevande category',
+		'update_item'       => 'Update Bevande category',
+		'add_new_item'      => 'Add New Bevande category',
+		'new_item_name'     => 'New Bevande category Name',
+		'menu_name'         => 'Bevande category',
 	],
 	'description'       => '',
 	// описание таксономии
