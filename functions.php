@@ -292,6 +292,9 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 		// This was removed in WordPress 5.6 but is still required to properly support WP 5.5.
 		add_theme_support( 'custom-units' );
 	}
+	add_image_size( 'desktop', '1920', '99999' );
+	add_image_size( 'tablet', '768', '99999' );
+	add_image_size( 'mobile', '400', '99999' );
 }
 add_action( 'after_setup_theme', 'twenty_twenty_one_setup' );
 /**
