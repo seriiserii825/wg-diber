@@ -87,6 +87,6 @@ function my_custom_init()
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'menu_icon'          => 'dashicons-bank',
-		'supports'           => array('title', 'thumbnail')
+		'supports'           => array('title', 'editor', 'thumbnail')
 	));
 }
