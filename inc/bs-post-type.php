@@ -32,7 +32,7 @@ function my_custom_init()
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'menu_icon'          => 'dashicons-beer',
-		'supports'           => array('title')
+		'supports'           => array('title', 'thumbnail')
 	));
 	register_post_type('altre-bevande', array(
 		'labels'             => array(
