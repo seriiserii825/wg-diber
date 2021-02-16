@@ -147,3 +147,10 @@ function wpassist_remove_block_library_css() {
 	wp_dequeue_style( 'wp-block-library' );
 }
 add_action( 'wp_enqueue_scripts', 'wpassist_remove_block_library_css' );
+function fireFunctionOnSave($post_id) {
+    if(wp_is_post_revision($post_id) || wp_is_post_autosave($post_id)) {
+        return;
+    }
+    $response = Requests::post('https://api.netlify.com/build_hooks/602bea0ab73b6c45b42c23c1');
+}
+add_action( 'save_post', 'fireFunctionOnSave' );
